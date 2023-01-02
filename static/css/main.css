@@ -1,0 +1,52 @@
+* {background-color: lightgrey}
+
+div.scroll {
+    background-color: white;
+    border:1px solid black;
+    width: 400px; 
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+  }
+#pageTitle {
+    color : blue;
+} 
+#userhead {
+    color: rgb(15, 122, 229);
+}
+#submitbutton {
+    background-color: rgb(15,122,229);
+    border-radius: 8px;
+    border: none;
+    width: 70px;
+    height: 35px;
+    font-weight: bolder;
+}
+#signup {
+    background-color: rgb(15,122,229);
+    border-radius: 8px;
+    border: none;
+    width: 70px;
+    height: 35px;
+    font-weight: bolder;
+}
+textarea{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.someHrefs {
+    text-decoration: none;
+    color: black;
+    background-color: pink;
+    padding: 5px;
+    border-radius: 5px;
+}
+.input{
+    background-color: white;
+    border-radius: 10px;
+    padding : 5px;
+}
