@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Profile</title>
+    {% block head2 %}{% endblock %}
+{% endblock %} 
+
+{% block body %}
+    Your profile! - Chat app logged in as {{username}},
+    <a href = "/logout/" id = "logout" class="someHrefs">Click here to log out</href></a>
+    <br> 
+    <br>
+    {% block content %} {% endblock %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'profile.html' %}
+
+{% block head2 %}
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    <h1 id="userhead">User: {{username}}</h1> 
+    <br>
+    <form name = "form" id="inputchat">
+        Type your message here:  
+        <br>
+        <textarea rows="5" cols="60" name="text" id="chatToSend"></textarea>
+        <br>
+        <input type="hidden" name = "user" id ="user" value={{ username }} />
+        <br>
+        <input type="button" value="Send" class="button" id="submitButton">
+      </form>
+      <br>
+    <div class="scroll" id = "chat_window">
+        
+
+    </div>
+{% endblock %} 

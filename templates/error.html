@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Error</title>
+{% endblock %}
+
+{% block body %}
+    <h3>This is the error page</h3>
+    <br>
+    <p>
+        If You were redirected here from the login page, then the username:password combination entered was not recognized
+        <br>
+        If you were redirected here from the register page then either the passwords didn't match, user already exists, or fields were left blank
+        <br>
+        If you tried to access profile page directly, this is not allowed, you must sign in first
+    </p>
+    <br>
+    <br>
+    <a href="/login/" id="login">Login</href>
+    <br><br>
+    <a href="/register/" id="register">Register</href>
+{% endblock %}

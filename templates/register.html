@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Register</title>
+{% endblock %}
+
+{% block body %}
+    Thank you for starting a new account with us. To get started we just need a bit of information.
+
+    <form method="POST">
+        <br>
+        Username: <input type="text" name="user" id="user"class="input">
+        <br>
+        Email: <input type="text" name="email" id="email"class="input">
+        <br>
+        Password:<input type="text" name="pass1" id="pass1"class="input">
+        <br>
+        Re-Enter Password:<input type="text" name="pass2" id="pass2"class="input">
+        <br>
+        <input type="submit" value="Sign up" class="button" id="signup">
+    </form>
+    <br>
+    <br>
+    Already have an account? <a href="/login" id="login">Sign in</href>
+{% endblock %}
